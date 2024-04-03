@@ -1,5 +1,4 @@
 .venu
 __pycache__
 Dataset
-rag_pipeline
-*.ipynb
+rag_pipeline.ipynb
