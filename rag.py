@@ -15,7 +15,8 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import AzureOpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-
+from langchain.prompts import ChatPromptTemplate
+from operator import itemgetter
 
 
 gpt = AzureChatOpenAI(
@@ -27,9 +28,14 @@ gpt = AzureChatOpenAI(
     verbose=True,
 )
 
-path = 'C:/Users/Admin/Desktop/RAG pipeline/Dataset/CSVDATASET'
-csv_loader = DirectoryLoader(path, glob="**/*.csv", loader_cls=CSVLoader)
-db = csv_loader.load()
+
+path = "C:/Users/Admin/Desktop/hsag chatbot/CSVDATASET"
+csv_loader_kwargs={'autodetect_encoding': True}
+loader = DirectoryLoader(path, glob="**/*.csv", loader_cls=CSVLoader, loader_kwargs=csv_loader_kwargs)
+db = loader.load()
+#path = 'C:/Users/Admin/Desktop/RAG pipeline/Dataset/CSVDATASET'
+#csv_loader = DirectoryLoader(path, glob="**/*.csv", loader_cls=CSVLoader)
+#db = csv_loader.load()
 
 urls = ["https://www.thuega-energie-gmbh.de/privatkunden.html"]
 loader = AsyncHtmlLoader(urls)
@@ -59,6 +65,16 @@ vectorstore2 = Chroma(persist_directory="C:/chroma_db", embedding_function=embed
 retriever = vectorstore2.as_retriever(search_type="similarity", search_kwargs={"k":3})
 
 prompt = hub.pull("rlm/rag-prompt")
+
+template = """You are an assistant named "hsag-chatbot" for question-answering tasks related to Energy industry. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.And if they ask general knowledge about the world try to answer those questions using your knowledge and also domian specific knowledge about energy industry. And also include from which dataaset you retrieved the answer for the response:
+Context:
+{context}
+
+Question:
+{question}
+"""
+
+prompt = ChatPromptTemplate.from_template(template)
 def format_docs(pages):
     return "\n\n".join(doc.page_content for doc in pages)
 
