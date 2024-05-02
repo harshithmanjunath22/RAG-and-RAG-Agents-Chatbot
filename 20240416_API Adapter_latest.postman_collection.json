@@ -1,0 +1,1176 @@
+{
+	"info": {
+		"_postman_id": "bf49398b-e493-407d-810f-45d21d9a1c97",
+		"name": "API Adapter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19479121"
+	},
+	"item": [
+		{
+			"name": "MeterReading",
+			"item": [
+				{
+					"name": "getMeterForCustomer",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/meter/getMeterForCustomer?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1Mzc1MywiZXhwIjoxNzEzMjU3MzUzfQ.HiEQJL_-tdS0J1lro2LCc2fL8ybBLYkxme1CFUqDwi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"meter",
+								"getMeterForCustomer"
+							],
+							"query": [
+								{
+									"key": "customerToken",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1Mzc1MywiZXhwIjoxNzEzMjU3MzUzfQ.HiEQJL_-tdS0J1lro2LCc2fL8ybBLYkxme1CFUqDwi"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/meter/getMeterForCustomer?customerToken=lkdhiksdfhzsd79sohjfnls3743ujfsöl3&readableOnly=false",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"getMeterForCustomer"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "lkdhiksdfhzsd79sohjfnls3743ujfsöl3"
+										},
+										{
+											"key": "readableOnly",
+											"value": "false",
+											"description": "Wenn true filtere alle nicht ablesebereiten Zähler heraus."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meters\": [\n        {\n            \"meterId\": 1244,\n            \"meterNumber\": \"ZEI2332DE2\",\n            \"section\": \"Power\",\n            \"validFrom\": null,\n            \"validTo\": \"2023-05-04 23:59:59\",\n            \"readable\": false,\n            \"meterType\": \"ZTZ\",\n            \"digitsBeforeDecimal\": 5,\n            \"digitsAfterDecimal\": 0,\n            \"register\": [\n                {\n                    \"registerId\": 1,\n                    \"obis\": \"1-1:1.8.1\",\n                    \"label\": \"HT\",\n                    \"expectedLowerBound\": 4554,\n                    \"expectedUpperBound\": 5287\n                },\n                {\n                    \"registerId\": 2,\n                    \"obis\": \"1-1:1.8.2\",\n                    \"label\": \"NT\",\n                    \"expectedLowerBound\": 3432,\n                    \"expectedUpperBound\": 3657\n                }\n            ]\n        },\n        {\n            \"meterId\": 32423,\n            \"meterNumber\": \"972922\",\n            \"section\": \"Power\",\n            \"validFrom\": \"2023-05-05 00:00:00\",\n            \"validTo\": null,\n            \"readable\": true,\n            \"meterType\": \"ZTZ\",\n            \"register\": [\n                {\n                    \"registerId\": 1,\n                    \"obis\": \"1-1:1.8.1\",\n                    \"label\": \"HT\",\n                    \"expectedLowerBound\": 0,\n                    \"expectedUpperBound\": 658\n                },\n                {\n                    \"registerId\": 2,\n                    \"obis\": \"1-1:1.8.2\",\n                    \"label\": \"NT\",\n                    \"expectedLowerBound\": 0,\n                    \"expectedUpperBound\": 360\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "Ungültiger Token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/meter/getMeterForCustomer?customerToken=lkdhiksdfhzsd79sohjfas43ujfsöl3sd&readableOnly=false",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"getMeterForCustomer"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "lkdhiksdfhzsd79sohjfas43ujfsöl3sd"
+										},
+										{
+											"key": "readableOnly",
+											"value": "false",
+											"description": "Wenn true filtere alle nicht ablesebereiten Zähler heraus."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"AdapterError: The token is not valid. Either the token has expired or a bad token was used.\",\r\n    \"errorType\": 1,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				},
+				{
+					"name": "saveMeterReading",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1MzU3OCwiZXhwIjoxNzEzMjU3MTc4fQ.WYszuRF3NZ20FsZjrTk5_7iFxdIPzoq76rubmpk6I\",\r\n    \"meterNumber\": \"21008827\",\r\n    \"forceWrite\": false,\r\n    \"forceWriteReason\": null,\r\n    \"acceptDifferenceWithPreviousTenant\": false,\r\n    \"readingDate\": \"2024-04-15\",\r\n    \"registerData\": [\r\n        {\r\n            \"registerId\": \"475708\",\r\n            \"label\": \"ZR1\",\r\n            \"meterReading\": \"1\"\r\n        },\r\n        {\r\n            \"registerId\": \"475709\",\r\n            \"label\": \"ZR2\",\r\n            \"meterReading\": \"1\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/meter/saveMeterReading",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"meter",
+								"saveMeterReading"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dNVlYiLCJpYXQiOjE2OTk5NDM1NDMsImV4cCI6MTY5OTk0NzE0M30.IIJrTh8VDgA9unEM_7dv7Uus_uarFeI4T8ZobUGK8kA\",\r\n    \"meterNumber\": \"330462\",\r\n    \"forceWrite\": false,\r\n    \"forceWriteReason\": null,\r\n    \"acceptDifferenceWithPreviousTenant\": false,\r\n    \"readingDate\": \"2023-11-14\",\r\n    \"registerData\": [\r\n        {\r\n            \"registerId\": \"002\",\r\n            \"meterReading\": \"69731\"\r\n        },\r\n        {\r\n            \"registerId\": \"003\",\r\n            \"meterReading\": \"60826\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/meter/saveMeterReading",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"saveMeterReading"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"results\": [\r\n        {\r\n            \"success\": true,\r\n            \"meterNumber\": \"21008827\",\r\n            \"registerId\": \"475708\"\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "Erfolgreich HT/NT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\":\"lkdhiksdfhzsd79sohjfnls3743ujfsöl3\",\r\n    \"meterId\":\"1244\",\r\n    \"registerId\":\"1\",\r\n    \"meterReading\":\"343\",\r\n    \"readingDate\":\"2023-09-07\",\r\n    \"forceWrite\":\"false\",\r\n    \"forceWriteReason\":null,\r\n    \"acceptDifferenceWithPreviousTenant\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/meter/saveMeterReading",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"saveMeterReading"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"success\": true,\n            \"meterNumber\": \"21008827\",\n            \"registerId\": \"475708\"\n        },\n        {\n            \"success\": true,\n            \"meterNumber\": \"21008827\",\n            \"registerId\": \"475709\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Unplausibler Zählerstand",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\":\"lkdhiksdfhzsd79sohjfnls3743ujfsöl3\",\r\n    \"meterId\":\"1244\",\r\n    \"registerId\":\"1\",\r\n    \"meterReading\":\"343343\",\r\n    \"readingDate\":\"2023-09-07\",\r\n    \"forceWrite\":\"false\",\r\n    \"forceWriteReason\":null,\r\n    \"acceptDifferenceWithPreviousTenant\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/meter/saveMeterReading",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"saveMeterReading"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"ApiError: Error while saving meter reading. \",\n    \"errorType\": 2,\n    \"advancedErrorInformation\": [\n        {\n            \"success\": false,\n            \"meterNumber\": \"21008827\",\n            \"registerId\": \"475708\",\n            \"apiErrorMessages\": [\n                {\n                    \"errorMessage\": \"meterReading height is implausible.\",\n                    \"errorCode\": 6\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "Ungültiger Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\":\"lkdhiksdfhz3223ohjfnls3743ujfsöl3\",\r\n    \"meterId\":\"1244\",\r\n    \"registerId\":\"1\",\r\n    \"meterReading\":\"343\",\r\n    \"readingDate\":\"2023-09-07\",\r\n    \"forceWrite\":\"false\",\r\n    \"forceWriteReason\":null,\r\n    \"acceptDifferenceWithPreviousTenant\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/meter/saveMeterReading",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"meter",
+										"saveMeterReading"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"AdapterError: The token is not valid. Either the token has expired or a bad token was used.\",\n    \"errorType\": 1,\n    \"advancedErrorInformation\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AuthenticateCustomer",
+			"item": [
+				{
+					"name": "authCustomerByVKPLZGEB",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/authcustomer/vkplzgeb?contractAccountNumber=20100062269&zipCode=68169&birthDate=1943-09-09",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authcustomer",
+								"vkplzgeb"
+							],
+							"query": [
+								{
+									"key": "contractAccountNumber",
+									"value": "20100062269"
+								},
+								{
+									"key": "zipCode",
+									"value": "68169"
+								},
+								{
+									"key": "birthDate",
+									"value": "1943-09-09"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreiche Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/vkplzgeb?vertragskonto=12334&plz=68259&geburtsdatum=12041986",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"vkplzgeb"
+									],
+									"query": [
+										{
+											"key": "vertragskonto",
+											"value": "12334"
+										},
+										{
+											"key": "plz",
+											"value": "68259"
+										},
+										{
+											"key": "geburtsdatum",
+											"value": "12041986"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": true,\r\n    \"customerToken\": \"lkdhiksdfhzsd79sohjfnls3743ujfsöl3\"\r\n}"
+						},
+						{
+							"name": "Fehlerhafte Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/vkplzgeb?vertragskonto=3234&plz=68259&geburtsdatum=12041986",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"vkplzgeb"
+									],
+									"query": [
+										{
+											"key": "vertragskonto",
+											"value": "3234"
+										},
+										{
+											"key": "plz",
+											"value": "68259"
+										},
+										{
+											"key": "geburtsdatum",
+											"value": "12041986"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"\",\r\n    \"errorType\": 2,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				},
+				{
+					"name": "authCustomerByVNZN",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/authcustomer/vnzn?contractNumber=ES0000000119&meterNumber=68555",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authcustomer",
+								"vnzn"
+							],
+							"query": [
+								{
+									"key": "contractNumber",
+									"value": "ES0000000119"
+								},
+								{
+									"key": "meterNumber",
+									"value": "68555"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreiche Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/vkplzgeb?vertragskonto=12334&plz=68259&geburtsdatum=12041986",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"vkplzgeb"
+									],
+									"query": [
+										{
+											"key": "vertragskonto",
+											"value": "12334"
+										},
+										{
+											"key": "plz",
+											"value": "68259"
+										},
+										{
+											"key": "geburtsdatum",
+											"value": "12041986"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": true,\r\n    \"customerToken\": \"lkdhiksdfhzsd79sohjfnls3743ujfsöl3\"\r\n}"
+						},
+						{
+							"name": "Fehlerhafte Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/vkplzgeb?vertragskonto=3234&plz=68259&geburtsdatum=12041986",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"vkplzgeb"
+									],
+									"query": [
+										{
+											"key": "vertragskonto",
+											"value": "3234"
+										},
+										{
+											"key": "plz",
+											"value": "68259"
+										},
+										{
+											"key": "geburtsdatum",
+											"value": "12041986"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"\",\r\n    \"errorType\": 2,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				},
+				{
+					"name": "authCustomerByKNVN",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/authcustomer/knvn?contractNumber=114&customerNumber=114",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authcustomer",
+								"knvn"
+							],
+							"query": [
+								{
+									"key": "contractNumber",
+									"value": "114"
+								},
+								{
+									"key": "customerNumber",
+									"value": "114"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreiche Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/knvn?contractNumber=ES00000062980&customerNumber=1005520645",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"knvn"
+									],
+									"query": [
+										{
+											"key": "contractNumber",
+											"value": "ES00000062980"
+										},
+										{
+											"key": "customerNumber",
+											"value": "1005520645"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": true,\r\n    \"customerToken\": \"lkdhiksdfhzsd79sohjfnls3743ujfsöl3\"\r\n}"
+						},
+						{
+							"name": "Fehlerhafte Authentifizierung",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/authcustomer/knvn?contractNumber=ES00000062980&customerNumber=1185001",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authcustomer",
+										"knvn"
+									],
+									"query": [
+										{
+											"key": "contractNumber",
+											"value": "ES00000062980"
+										},
+										{
+											"key": "customerNumber",
+											"value": "1185001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"\",\r\n    \"errorType\": 2,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PayPlan",
+			"item": [
+				{
+					"name": "getPayPlanData",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/payplan/getPayPlanData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NDYwNCwiZXhwIjoxNzEzMjU4MjA0fQ.nEiC2SD9SSL4WGu_qaX3o2fTEwIAwrQTnoKdbHRxQS",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"payplan",
+								"getPayPlanData"
+							],
+							"query": [
+								{
+									"key": "customerToken",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NDYwNCwiZXhwIjoxNzEzMjU4MjA0fQ.nEiC2SD9SSL4WGu_qaX3o2fTEwIAwrQTnoKdbHRxQS"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/payplan/getPayPlanData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxODcxMDQ2LCJleHAiOjE3MDE4NzQ2NDZ9.2-LS0ZWZHh_bdhNUMMGv8YJG2JAYv56NwRFqk2d5pkg",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payplan",
+										"getPayPlanData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxODcxMDQ2LCJleHAiOjE3MDE4NzQ2NDZ9.2-LS0ZWZHh_bdhNUMMGv8YJG2JAYv56NwRFqk2d5pkg"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": true,\r\n    \"payPlanData\": {\r\n        \"minimumPayPlanHeight\": 60,\r\n        \"maximumPayPlanHeight\": 196\r\n        \"currentPayPlanHeight\": 67,\r\n        \"isAllowedToChange\": true,\r\n        \"contractNumber\": \"ES00000001173\",\r\n        \"earliestStartDate\": \"2023-12-07T23:00:00.000Z\",\r\n        \"latestStartDate\": \"2024-09-08T22:00:00.000Z\",\r\n        \"payPlanPositions\": {\r\n            \"futurePositions\": [\r\n                {\r\n                    \"position\": \"Februar 2024\",\r\n                    \"duedate\": \"2024-01-31T23:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"März 2024\",\r\n                    \"duedate\": \"2024-02-29T23:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"April 2024\",\r\n                    \"duedate\": \"2024-03-31T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"Mai 2024\",\r\n                    \"duedate\": \"2024-04-30T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"Juni 2024\",\r\n                    \"duedate\": \"2024-05-31T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"Juli 2024\",\r\n                    \"duedate\": \"2024-06-30T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"August 2024\",\r\n                    \"duedate\": \"2024-07-31T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                },\r\n                {\r\n                    \"position\": \"September 2024\",\r\n                    \"duedate\": \"2024-08-31T22:00:00.000Z\",\r\n                    \"height\": 126,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                }\r\n            ],\r\n            \"pastPositions\": [\r\n                {\r\n                    \"position\": \"Januar 2024\",\r\n                    \"duedate\": \"2023-12-31T23:00:00.000Z\",\r\n                    \"height\": 67,\r\n                    \"paymentMethod\": \"SEPA-Lastschrift\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}"
+						},
+						{
+							"name": "Nicht Erfolgreich",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/payplan/getPayPlanData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxMDg5NTk0LCJleHAiOjE3MDEwOTMxOTR9.3Zz_3dg31xVuQjVX85avNcSUN0SZJ6UYeUirPoyCuUg",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payplan",
+										"getPayPlanData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxMDg5NTk0LCJleHAiOjE3MDEwOTMxOTR9.3Zz_3dg31xVuQjVX85avNcSUN0SZJ6UYeUirPoyCuUg"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"AdapterError: The token is not valid. Either the token has expired or a bad token was used.\",\r\n    \"errorType\": 1,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				},
+				{
+					"name": "changePayPlan",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NDYwNCwiZXhwIjoxNzEzMjU4MjA0fQ.nEiC2SD9SSL4WGu_qaX3o2fTEwIAwrQTnoKdbHRxQSU\",\r\n    \"startDate\": \"2024-04-20\",\r\n    \"newPayPlanHeight\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/payplan/changePayPlan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"payplan",
+								"changePayPlan"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxODcxMDQ2LCJleHAiOjE3MDE4NzQ2NDZ9.2-LS0ZWZHh_bdhNUMMGv8YJG2JAYv56NwRFqk2d5pkg\",\r\n    \"startDate\": \"2023-12-27T23:00:00.000Z\",\r\n    \"newPayPlanHeight\": 90\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payplan/changePayPlan",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payplan",
+										"changePayPlan"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"results\": [\r\n        {\r\n            \"resultType\": \"success\",\r\n            \"success\": true,\r\n            \"messages\": [\r\n                \"Payplan successfully updated.\"\r\n            ]\r\n        }\r\n    ]\r\n}"
+						},
+						{
+							"name": "Fehler",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzAxMTY4NDA4LCJleHAiOjE3MDExNzIwMDh9.qouddNpkZeLDpsWqi7dwIfnf-eWcYpzL-7DeACHpKSk\",\r\n    \"startDate\": \"2023-12-27T23:00:00.000Z\",\r\n    \"newPayPlanHeight\": 90\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payplan/changePayPlan",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payplan",
+										"changePayPlan"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"\",\r\n    \"errorType\": ,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CustomerData",
+			"item": [
+				{
+					"name": "getContractData",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/customer/getContractData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NTkwMiwiZXhwIjoxNzEzMjU5NTAyfQ.hvlm_o9wtEyaZAPfo1Ts6n9ZwA2NzWHdot8nnJ1-GdU",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customer",
+								"getContractData"
+							],
+							"query": [
+								{
+									"key": "customerToken",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NTkwMiwiZXhwIjoxNzEzMjU5NTAyfQ.hvlm_o9wtEyaZAPfo1Ts6n9ZwA2NzWHdot8nnJ1-GdU"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/contract/getContractData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MTAyNjQwLCJleHAiOjE3MDYxMDYyNDB9.Z076YmVWwPVPDTww9HDaP0TAXjH1v0yBa765qkg5PqA",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contract",
+										"getContractData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MTAyNjQwLCJleHAiOjE3MDYxMDYyNDB9.Z076YmVWwPVPDTww9HDaP0TAXjH1v0yBa765qkg5PqA"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": true,\r\n    \"contractNumber\": \"ES00000062980\",\r\n    \"section\": \"Gas\",\r\n    \"cancellationDateTo\": null,\r\n    \"invoicingInterval\": 12,\r\n    \"periodStart\": \"2022-03-14T23:00:00.000Z\",\r\n    \"periodEnd\": null,\r\n    \"state\": \"GPKE_APPROVED\"\r\n}"
+						},
+						{
+							"name": "Ungültiger Token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/contract/getContractData?customerToken=yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MTAyNjQwLCJleHAiOjE3MDYxMDYyNDB9.Z076YmVWwPVPDTww9HDaP0TAXjH1v0yBa765qkg5PqA",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contract",
+										"getContractData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MTAyNjQwLCJleHAiOjE3MDYxMDYyNDB9.Z076YmVWwPVPDTww9HDaP0TAXjH1v0yBa765qkg5PqA"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"AdapterError: The token is not valid. Either the token has expired or a bad token was used.\",\r\n    \"errorType\": 1,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				},
+				{
+					"name": "getCustomerData",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/customer/getCustomerData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NjA2MSwiZXhwIjoxNzEzMjU5NjYxfQ.JKg5QnsuSuZxkT-K6qPDqm07jgeaI-TKZtvkdfX8DSU",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customer",
+								"getCustomerData"
+							],
+							"query": [
+								{
+									"key": "customerToken",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJ0ZXN0VXNlciIsImlhdCI6MTcxMzI1NjA2MSwiZXhwIjoxNzEzMjU5NjYxfQ.JKg5QnsuSuZxkT-K6qPDqm07jgeaI-TKZtvkdfX8DSU"
+								},
+								{
+									"key": "customerNumber",
+									"value": "1003106382",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Erfolgreich (nach KNVN Authentifizierung)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/contract/getCustomerData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MDA5MTUzLCJleHAiOjE3MDYwMTI3NTN9.kQH0ClTPZ7uOOLU2k3W_pQM4J04-Hn755HHVNSKSLXM",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contract",
+										"getCustomerData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MDA5MTUzLCJleHAiOjE3MDYwMTI3NTN9.kQH0ClTPZ7uOOLU2k3W_pQM4J04-Hn755HHVNSKSLXM"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"contracts\": [\r\n        {\r\n            \"contractNumber\": \"ES00000062980\",\r\n            \"section\": \"Gas\",\r\n            \"invoicingInterval\": 12,\r\n            \"cancellationDateTo\": null,\r\n            \"periodStart\": \"2022-03-14T23:00:00.000Z\",\r\n            \"periodEnd\": null,\r\n            \"state\": \"GPKE_APPROVED\",\r\n            \"nextPossibleCancellationDate\": \"2024-03-14T22:59:59.000Z\"\r\n        }\r\n    ],\r\n    \"firstName\": \"Sebastian\",\r\n    \"lastName\": \"Löecke\",\r\n    \"bankAccounts\": [\r\n        {\r\n            \"bankName\": \"Commerzbank Köln\",\r\n            \"iban\": \"DE89370400440532013000\",\r\n            \"bic\": \"COBADEFFXXX\"\r\n        }\r\n    ],\r\n    \"customerNumber\": \"1005520645\",\r\n    \"adress\": {\r\n        \"street\": \"Schmiedeweg\",\r\n        \"housenumber\": \"10b\",\r\n        \"postalCode\": \"21481\",\r\n        \"city\": \"Lauenburg\"\r\n    }\r\n}"
+						},
+						{
+							"name": "Erfolgreich (nach VNZN Authentifizierung)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/contract/getCustomerData?customerToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MDA5Mjk4LCJleHAiOjE3MDYwMTI4OTh9.Kgo2DsrFa8xNcoZiHAYVUWZ5LXldmWnW4vZ3tPlzgqU&customerNumber=1005520645",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contract",
+										"getCustomerData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA2MDA5Mjk4LCJleHAiOjE3MDYwMTI4OTh9.Kgo2DsrFa8xNcoZiHAYVUWZ5LXldmWnW4vZ3tPlzgqU"
+										},
+										{
+											"key": "customerNumber",
+											"value": "1005520645"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"contracts\": [\r\n        {\r\n            \"contractNumber\": \"ES00000062980\",\r\n            \"section\": \"Gas\",\r\n            \"invoicingInterval\": 12,\r\n            \"cancellationDateTo\": null,\r\n            \"periodStart\": \"2022-03-14T23:00:00.000Z\",\r\n            \"periodEnd\": null,\r\n            \"state\": \"GPKE_APPROVED\",\r\n            \"nextPossibleCancellationDate\": \"2024-03-14T22:59:59.000Z\"\r\n        }\r\n    ],\r\n    \"firstName\": \"Sebastian\",\r\n    \"lastName\": \"Löecke\",\r\n    \"bankAccounts\": [\r\n        {\r\n            \"bankName\": \"Commerzbank Köln\",\r\n            \"iban\": \"DE89370400440532013000\",\r\n            \"bic\": \"COBADEFFXXX\"\r\n        }\r\n    ],\r\n    \"customerNumber\": \"1005520645\",\r\n    \"adress\": {\r\n        \"street\": \"Schmiedeweg\",\r\n        \"housenumber\": \"10b\",\r\n        \"postalCode\": \"21481\",\r\n        \"city\": \"Lauenburg\"\r\n    }\r\n}"
+						},
+						{
+							"name": "Ungültiger Token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/contract/getCustomerData?customerToken=yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA1OTI2MjY4LCJleHAiOjE",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"contract",
+										"getCustomerData"
+									],
+									"query": [
+										{
+											"key": "customerToken",
+											"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhenAiOiJjb21kaWFsb2dWb25vdmlhIiwiaWF0IjoxNzA1OTI2MjY4LCJleHAiOjE"
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\r\n    \"success\": false,\r\n    \"message\": \"AdapterError: The token is not valid. Either the token has expired or a bad token was used.\",\r\n    \"errorType\": 1,\r\n    \"advancedErrorInformation\": {}\r\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
