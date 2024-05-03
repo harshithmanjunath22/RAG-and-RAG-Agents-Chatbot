@@ -17,7 +17,14 @@ from langchain_openai import AzureOpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import ChatPromptTemplate
 from operator import itemgetter
+from dotenv import load_dotenv
 
+load_dotenv()
+
+LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
+LANGCHAIN_ENDPOINT = os.getenv("LANGCHAIN_ENDPOINT")
+LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+LANGCHAIN_PROJECT = os.getenv("LANGCHAIN_PROJECT")
 
 gpt = AzureChatOpenAI(
     azure_deployment="gpt-35-turbo-1106",
@@ -66,13 +73,33 @@ retriever = vectorstore2.as_retriever(search_type="similarity", search_kwargs={"
 
 prompt = hub.pull("rlm/rag-prompt")
 
-template = """You are an assistant named "hsag-chatbot" for question-answering tasks related to Energy industry. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.And if they ask general knowledge about the world try to answer those questions using your knowledge and also domian specific knowledge about energy industry. And also include from which dataaset you retrieved the answer for the response:
+template = """You are an assistant named "hsag-chatbot" for question-answering tasks 
+related to the Energy industry and general conversation. 
+
+If the question is related to the energy domain try to answer the question from the knowledge you have in your memory.
+
+Use the following pieces of retrieved context to answer the question 
+or engage in small talk with the user in a friendly and informative way. 
+If you don't know the answer to a factual question, 
+just say that you don't know. 
+Use three sentences maximum and keep the answer concise. 
+If the user asks funny questions or jokes, try to answer them 
+using your knowledge or generate a humorous response. 
+If they ask general knowledge about the world, try to answer 
+those questions using your knowledge and also domain-specific knowledge 
+about the energy industry. 
+Indicate the dataset from which you retrieved the answer (if applicable) 
+in the response.
+
 Context:
 {context}
 
 Question:
 {question}
 """
+
+
+
 
 prompt = ChatPromptTemplate.from_template(template)
 def format_docs(pages):
