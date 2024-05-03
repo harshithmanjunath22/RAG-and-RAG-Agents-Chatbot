@@ -43,6 +43,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
             # Incorporating the conversation memory snippet
             user_input = st.session_state.messages[-1]["content"]
             response = cached_get_response(prompt)
+            #response = get_response(user_input)
             st.write(response)
             message = {"role": "assistant", "content": response}
             st.session_state.messages.append(message)
