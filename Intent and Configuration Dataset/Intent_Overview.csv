@@ -1,0 +1,452 @@
+id,SkillName,active,skillId,defaultEntityVirtualIntentName
+additionalPaymentOverview,AdvancePaymentSkill,0,AP,Erklärung zur Nachzahlung
+advancePaymentOverview,AdvancePaymentSkill,1,AP,Übersicht zur Abschlagszahlung
+AP_adjustmentLimit,AdvancePaymentSkill,1,AP,Anpassungsgrenzen beim Abschlag
+AP_changeAmount,AdvancePaymentSkill,1,AP,Abschlag ändern
+AP_changeBankAccount,AdvancePaymentSkill,1,AP,Bankverbindung ändern
+AP_changeBillingPeriod,AdvancePaymentSkill,1,AP,Abrechnungsturnus ändern
+AP_changeDueDate,AdvancePaymentSkill,1,AP,Fälligkeitsdatum des Abschlag ändern
+AP_complaint,AdvancePaymentSkill,1,AP,Probleme mit der Rechnung oder dem Abschlag
+AP_currentAmountAndDueDate,AdvancePaymentSkill,1,AP,Aktuellen Abschlag und Fälligkeit anzeigen
+AP_debitorAccount,AdvancePaymentSkill,1,AP,Offene Beträge/Rechnungen
+AP_deferPayment,AdvancePaymentSkill,1,AP,Zahlungsschwierigkeiten
+AP_offeredPaymentOptions,AdvancePaymentSkill,1,AP,Angebotene Zahlungsarten
+AP_payPlan,AdvancePaymentSkill,1,AP,Zahlplan
+AP_reasonForPriceIncrease,AdvancePaymentSkill,1,AP,Preiserhöhung
+AP_refundCredit,AdvancePaymentSkill,1,AP,Guthabenerstattung
+AP_reminder,AdvancePaymentSkill,1,AP,Mahnung
+AP_returnDebitFee,AdvancePaymentSkill,0,AP,Rücklastschrift
+AP_SEPAmandate,AdvancePaymentSkill,1,AP,Formular für Lastschriftmandate
+AP_whatIsAdvancePayment,AdvancePaymentSkill,1,AP,Erklärung zur Abschlagszahlung
+ascertainPaymentAmount,AdvancePaymentSkill,1,AP,Abschlagsprüfung
+billOverview,AdvancePaymentSkill,1,AP,Rechnungen einsehen
+billTime,AdvancePaymentSkill,1,AP,Rechnungszeitpunkt
+changeAmountForm,AdvancePaymentSkill,0,AP,Abschlagsänderung (Formular)
+discountAdvancePayment,AdvancePaymentSkill,1,AP,Rabatt bei Vorauszahlung
+explainBenefitSepaMandate,AdvancePaymentSkill,1,AP,Mehrwert vom Lastschriftmandat
+getBankTransferDetails,AdvancePaymentSkill,1,AP,Überweisungsdaten anzeigen
+infoAboutPriceIncrease,AdvancePaymentSkill,1,AP,Information zu Preisanpassungen
+lumpSum,AdvancePaymentSkill,1,AP,Kostenpauschalen
+reasonForPaymentAmountChange,AdvancePaymentSkill,1,AP,Grund der Abschlagsänderung
+reportIncorrectDebit,AdvancePaymentSkill,1,AP,Fehlerhafte Abbuchung
+requestBillingService,AdvancePaymentSkill,1,AP,Zwischenrechnung oder Rechnungssimulation anfordern
+activationKey,BasisFAQSkill,0,FAQ,Aktivierungsschlüssel
+appDownload,BasisFAQSkill,1,FAQ,App
+blackout,BasisFAQSkill,1,FAQ,Störung melden
+careerFAQ,BasisFAQSkill,0,FAQ,Konkrete Fragen zum Thema Karriere
+caseOfDeath,BasisFAQSkill,1,FAQ,Todesfall
+changePassword,BasisFAQSkill,1,FAQ,Zugangsdaten anfordern
+CQA,BasisFAQSkill,0,FAQ,CQA
+currentMarketSituation,BasisFAQSkill,1,FAQ,Information zur aktuellen Marktlage
+customerPortal,BasisFAQSkill,1,FAQ,Kundenportal
+cyberAttack,BasisFAQSkill,1,FAQ,Cyberangriff
+disclosureRequirementsGridOperator,BasisFAQSkill,1,FAQ,Veröffentlichungspflichten Netzbetreiber
+doorstepSelling,BasisFAQSkill,1,FAQ,Haustürgeschäfte
+energyMarketRoles,BasisFAQSkill,0,FAQ,Rollen im Energiewirtschaftssektor
+energyProductContract,BasisFAQSkill,1,FAQ,EVU-Vertriebsanfragen
+explainInactiveAccount,BasisFAQSkill,0,FAQ,explainInactiveAccount
+gasPriceBrake,BasisFAQSkill,1,FAQ,Gaspreisbremse
+generalMandate,BasisFAQSkill,1,FAQ,Vollmacht
+immediateRelief,BasisFAQSkill,1,FAQ,Soforthilfe
+loginIssues,BasisFAQSkill,1,FAQ,Login-Probleme
+missingEmail,BasisFAQSkill,1,FAQ,E-Mail Empfangsprobleme
+powerPriceBrake,BasisFAQSkill,1,FAQ,Strompreisbremse
+priceControlDisbursement,BasisFAQSkill,1,FAQ,Auszahlung der Preisbremsen
+projectedConsumption,BasisFAQSkill,1,FAQ,Verbrauchsprognose
+reliefCalculation,BasisFAQSkill,1,FAQ,Berechnung der Preisbremsen
+reliefPackage,BasisFAQSkill,1,FAQ,Entlastungspaket
+SM_advancePayment,BasisFAQSkill,0,FAQ,Abschlag
+SM_babyBonus,BasisFAQSkill,0,FAQ,Baby-Bonus
+SM_basicOrReplacementSupplier,BasisFAQSkill,1,FAQ,Unterschied Grund- &  Ersatzversorger
+SM_blackout,BasisFAQSkill,0,FAQ,Störung
+SM_blackoutDistrictHeat,BasisFAQSkill,0,FAQ,Störung Fernwärme
+SM_blackoutElectricity,BasisFAQSkill,0,FAQ,Stromausfall
+SM_blackoutGas,BasisFAQSkill,0,FAQ,Gasstörung
+SM_blackoutStreet,BasisFAQSkill,0,FAQ,Defekte Straßenlaterne melden
+SM_blackoutWater,BasisFAQSkill,0,FAQ,Wasserschaden/Störung Wasser
+SM_bouncyCastle,BasisFAQSkill,0,FAQ,Hüpfburg
+SM_buildingYard,BasisFAQSkill,0,FAQ,Bauhof
+SM_campingSite,BasisFAQSkill,0,FAQ,Campingplatz
+SM_career,BasisFAQSkill,1,FAQ,Karriere
+SM_certifications,BasisFAQSkill,1,FAQ,Zertifizierungen
+SM_changeCustomerData,BasisFAQSkill,1,FAQ,Kundendaten ändern
+SM_cinema,BasisFAQSkill,0,FAQ,(Open-Air) Kino
+SM_cityBus,BasisFAQSkill,0,FAQ,Stadtbus und Fahrplanauskunft
+SM_cloudService,BasisFAQSkill,1,FAQ,Cloudia Dokumanager
+SM_compliance,BasisFAQSkill,0,FAQ,Compliance
+SM_constructionSite,BasisFAQSkill,1,FAQ,Informationen zu Baustellen/-maßnahmen
+SM_contractingDistrictHeat,BasisFAQSkill,0,FAQ,Contracting Wärme
+SM_coronaVAT,BasisFAQSkill,0,FAQ,Mehrwertsteuersenkung wegen Corona
+SM_crowdFunding,BasisFAQSkill,0,FAQ,Crowdfunding
+SM_currentEvents,BasisFAQSkill,1,FAQ,Aktuelle Veranstaltungen
+SM_currentNews,BasisFAQSkill,1,FAQ,Aktuelle Meldungen
+SM_customerData,BasisFAQSkill,0,FAQ,Kundendaten
+SM_customerPortal,BasisFAQSkill,0,FAQ,Passwort für Kundenportal vergessen
+SM_customerReferral,BasisFAQSkill,1,FAQ,Kunden-werben-Kunden
+SM_customerService,BasisFAQSkill,1,FAQ,Kundenservice
+SM_customerSurvey,BasisFAQSkill,0,FAQ,Kundenbefragung
+SM_dataPrivacy,BasisFAQSkill,1,FAQ,Datenschutz und Datensicherheit
+SM_energyAndEnvironmentCenter,BasisFAQSkill,0,FAQ,Energie-und Umweltzentrum
+SM_energyCertificate,BasisFAQSkill,1,FAQ,Energiezertifikat
+SM_energyConsulting,BasisFAQSkill,1,FAQ,Energieberatung
+SM_energyGiftCard,BasisFAQSkill,1,FAQ,Energiegutschein
+SM_gardenWaterMeter,BasisFAQSkill,1,FAQ,Gartenwasserzähler
+SM_gartenGlueck,BasisFAQSkill,0,FAQ,Gartenglück Naturdünger
+SM_gasConversion,BasisFAQSkill,1,FAQ,Umstellung von L- zu H-Gas
+SM_houseConnection,BasisFAQSkill,1,FAQ,Hausanschluss
+SM_iceStadium,BasisFAQSkill,0,FAQ,Eissporthalle
+SM_imprint,BasisFAQSkill,1,FAQ,Impressum
+SM_insulatePowerLine,BasisFAQSkill,0,FAQ,Stromleitung isolieren
+SM_invoice,BasisFAQSkill,0,FAQ,Nachfrage zu Rechnungen
+SM_lightingRental,BasisFAQSkill,1,FAQ,LED Beleuchtung
+SM_meteringPointOperation,BasisFAQSkill,1,FAQ,Messstellenbetrieb
+SM_naturalGasStation,BasisFAQSkill,1,FAQ,Erdgastankstelle
+SM_openingHoursCustomerCenter,BasisFAQSkill,1,FAQ,Öffnungszeiten Kundenzentrum
+SM_powerGridOperator,BasisFAQSkill,1,FAQ,Netzbetrieb
+SM_powerSharing,BasisFAQSkill,0,FAQ,PowerSharing
+SM_publicTransport,BasisFAQSkill,0,FAQ,Öffentliche Verkehrsmittel
+SM_rainwater,BasisFAQSkill,1,FAQ,Abwasser
+SM_receivableManagement,BasisFAQSkill,1,FAQ,Forderungsmanagement
+SM_saveEnergy,BasisFAQSkill,1,FAQ,Energiespartipps
+SM_schoolCommunication,BasisFAQSkill,1,FAQ,Schulkommunikation
+SM_socialCoins,BasisFAQSkill,0,FAQ,Social Coins
+SM_socialCommitment,BasisFAQSkill,1,FAQ,Soziales Engagement
+SM_sponsoring,BasisFAQSkill,1,FAQ,Sponsoring
+SM_sustainability,BasisFAQSkill,1,FAQ,Nachhaltigkeit
+SM_swimmingPool,BasisFAQSkill,1,FAQ,Schwimmbad
+SM_technicalMalfunction,BasisFAQSkill,1,FAQ,Aktuellen Fehler auf der Homepage melden
+SM_tenderOffer,BasisFAQSkill,1,FAQ,Ausschreibungen
+SM_termsAndConditions,BasisFAQSkill,1,FAQ,Allgemeine Geschäftsbedingungen
+SM_thermography,BasisFAQSkill,1,FAQ,Thermographie
+SM_treeInPowerline,BasisFAQSkill,0,FAQ,Baum wächst in Stromleitung
+SM_wasteDisposal,BasisFAQSkill,1,FAQ,Müllentsorgung
+SM_water,BasisFAQSkill,1,FAQ,Wasserversorgung
+supplySecurity,BasisFAQSkill,1,FAQ,Versorgungssicherheit
+tenantElectricity,BasisFAQSkill,1,FAQ,Mieterstrom
+testIntent,BasisFAQSkill,0,FAQ,Intent zum Testen
+testIntent2,BasisFAQSkill,0,FAQ,noch ein Testintent TES TEST
+vehicleRegistrationCertificate,BasisFAQSkill,1,FAQ,KFZ-Schein
+viewCustomerData,BasisFAQSkill,1,FAQ,Kunden- und Vertragsdaten einsehen
+billingInfoEEG,EEGSkill,1,EEG,EEG-Abrechnung
+changeCompensationAmountEEG,EEGSkill,0,EEG,EEG-Gutschriftshöhe ändern
+changeCompensationEEG,EEGSkill,1,EEG,EEG-Vergütung (Änderung der Vergütungsform)
+changeEEGConsumptionMode,EEGSkill,1,EEG,Umstellung des Verbrauchsmodus
+changeEEGModule,EEGSkill,1,EEG,PV-Anlagen (Modultausch)
+changeEEGOperator,EEGSkill,1,EEG,Betreiberwechsel von einer EEG-Anlage
+changesONPV,EEGSkill,1,EEG,PV-Anlagen (Änderungen)
+changeSupplierEEG,EEGSkill,1,EEG,Stromanbieterwechsel bei Einspeisung
+checkFeedingHistory,EEGSkill,1,EEG,Einspeisemengen prüfen
+compensationEEGTaxes,EEGSkill,1,EEG,EEG-Vergütung (Abrechnung und Steuern)
+EEGOverview,EEGSkill,1,EEG,Übersicht zu Einspeisung
+EEGSystemType,EEGSkill,1,EEG,Informationen zu EEG-Anlagen (außer PV)
+feedingAndGenerationVolume,EEGSkill,1,EEG,Erzeugungs- und Einspeisemenge
+generalEEGProcess,EEGSkill,1,EEG,EEG-Anlagen (Allgemeine Prozesse)
+infoCompensationEEG,EEGSkill,1,EEG,EEG-Vergütung (Informationen)
+infoCompensationRateEEG,EEGSkill,1,EEG,EEG-Vergütung (Vergütungssätze)
+infoFeedInManagement,EEGSkill,1,EEG,Maßnahmen zur Netzstabilität
+infoGetCompensationEEG,EEGSkill,1,EEG,EEG-Vergütung (Antrag und Auszahlung)
+infoMastr,EEGSkill,1,EEG,Marktstammdatenregister (Informationen)
+infoPVModule,EEGSkill,1,EEG,Mono- und Polymodule
+measuringConceptEEG,EEGSkill,1,EEG,EEG-Messkonzepte
+privateConsumptionBilling,EEGSkill,1,EEG,Eigenverbrauch von Strom Übersicht
+processingStatusEEG,EEGSkill,1,EEG,Bearbeitungsstand 
+PVRequirement,EEGSkill,1,EEG,PV-Pflicht
+PVSystemType,EEGSkill,1,EEG,PV-Anlagen (Informationen)
+registerEEGSystem,EEGSkill,1,EEG,Registrierung EEG-Anlagen (außer PV)
+registerMastr,EEGSkill,0,EEG,Marktstammdatenregister (Registrierung)
+registerPVElectrician,EEGSkill,0,EEG,registerPVElectrician
+registerPVPrivatePerson,EEGSkill,0,EEG,registerPVPrivatePerson
+registerPVSystem,EEGSkill,1,EEG,Registrierung PV-Anlagen
+rippleControl,EEGSkill,1,EEG,Rundsteuerung
+sequenceNumber,EEGSkill,1,EEG,Laufnummer
+solarOverview,EEGSkill,0,EEG,Übersicht zu Photovoltaik-Themen
+specificEEGProcess,EEGSkill,1,EEG,EEG-Anlagen (Spezifische Prozesse)
+chargingBilling,EMobilitySkill,1,EM,Ladekostenabrechnung
+chargingCard,EMobilitySkill,1,EM,Ladekarte
+chargingConnection,EMobilitySkill,1,EM,Ladeanschluss
+chargingCosts,EMobilitySkill,1,EM,Ladekosten
+chargingInstruction,EMobilitySkill,1,EM,Ladevorgang
+chargingModes,EMobilitySkill,1,EM,Lademodi
+chargingParkingRegulations,EMobilitySkill,1,EM,Parkvorschriften beim Laden
+chargingPayment,EMobilitySkill,1,EM,Ladekostenbezahlung
+chargingStationPermit,EMobilitySkill,1,EM,Genehmigung Ladeeinrichtung
+chargingTime,EMobilitySkill,1,EM,Ladedauer
+eMobilityFunding,EMobilitySkill,1,EM,Förderung von Elektromobilität
+ghgQuota,EMobilitySkill,1,EM,THG-Quote
+pvForCharging,EMobilitySkill,1,EM,PV-Strom zum Laden
+registerChargingStation,EMobilitySkill,1,EM,Ladevorrichtung anmelden
+SM_chargingStation,EMobilitySkill,1,EM,(Öffentliche) Ladestation
+SM_emobility,EMobilitySkill,1,EM,Elektromobilität
+SM_pedelec,EMobilitySkill,1,EM,Pedelec
+SM_wallbox,EMobilitySkill,1,EM,Wallbox(-installation)
+applyForPCOS,HouseConnectionSkill,1,HC,Baustrom-Beantragung
+buildingCostSubsidy,HouseConnectionSkill,1,HC,Baukostenzuschuss
+cancelPCOS,HouseConnectionSkill,1,HC,Baustrom-Abmeldung
+changeHC,HouseConnectionSkill,1,HC,Hausanschluss ändern
+commissioningSteps,HouseConnectionSkill,1,HC,Hausanschluss Inbetriebnahmeschritte
+commissioningTimeFrame,HouseConnectionSkill,1,HC,Dauer und Status Hausanschluss
+costsHC,HouseConnectionSkill,1,HC,Hausanschluss - Kosten
+enterInstallerOverview,HouseConnectionSkill,1,HC,Installateurverzeichnis - Eintragung
+findInstallerOverview,HouseConnectionSkill,1,HC,Installateur finden
+gridConnectionInfo,HouseConnectionSkill,1,HC,Hausanschluss - Informationen
+gridConnectionPower,HouseConnectionSkill,1,HC,Hausanschlussleistung
+HC_registerHC,HouseConnectionSkill,0,HC,Hausanschluss anmelden
+houseConnectionBox,HouseConnectionSkill,1,HC,Hausanschlusskasten
+houseConnectionOverview,HouseConnectionSkill,1,HC,Übersicht zum Hausanschluss
+installationMethodHC,HouseConnectionSkill,1,HC,Hausanschluss - Installationsvorgehen
+installerRequired,HouseConnectionSkill,1,HC,Installateur für Hausanschluss
+installHeatPump,HouseConnectionSkill,1,HC,Wärmepumpe/Durchlauferhitzer installieren
+isHCPossible,HouseConnectionSkill,1,HC,Hausanschluss - Vorprüfung
+isolatePowerLine,HouseConnectionSkill,1,HC,Freileitungsisolierung
+lineInformation,HouseConnectionSkill,1,HC,Leitungsauskunft
+microEmptyConduit,HouseConnectionSkill,1,HC,Micro-Leerrohr
+oilTankDisposal,HouseConnectionSkill,1,HC,Öltankentsorgung
+PCOSinfo,HouseConnectionSkill,1,HC,Informationen Baustrom
+personalContributions,HouseConnectionSkill,1,HC,Eigenleistungen
+PVRegisterOnline,HouseConnectionSkill,0,HC,PV-Onlineportal - Eintragung
+registerHC,HouseConnectionSkill,1,HC,Anmeldung Hausanschluss
+registerWallbox,HouseConnectionSkill,0,HC,Wallbox anmelden
+specificProcessHC,HouseConnectionSkill,0,HC,Hausanschluss - Spezifische Fragen
+TAMInfo,HouseConnectionSkill,1,HC,TAB - Informationen
+utilitiesFailure,HouseConnectionSkill,1,HC,Hausanschluss - Probleme melden
+energySavingOrdinance,InvoiceDeclarationSkill,1,ID,Energieeinsparverordnung
+explainInvoiceComponent,InvoiceDeclarationSkill,0,ID,explainInvoiceComponent
+explainInvoiceOtherReceivable,InvoiceDeclarationSkill,1,ID,Sonstige Forderungen
+gasApportionment,InvoiceDeclarationSkill,1,ID,Gasumlage
+ID_ablavApportionment,InvoiceDeclarationSkill,0,ID,Umlage für abschaltbare Lasten
+ID_amountPayable,InvoiceDeclarationSkill,1,ID,Restbetrag
+ID_amountsPaidInvoice,InvoiceDeclarationSkill,0,ID,gezahlte Beträge auf Rechnung
+ID_basicPrice,InvoiceDeclarationSkill,1,ID,Grundpreis
+ID_billingCycle,InvoiceDeclarationSkill,1,ID,Abrechnungszeitraum
+ID_carbonTax,InvoiceDeclarationSkill,1,ID,CO2-Steuer
+ID_concessionFee,InvoiceDeclarationSkill,1,ID,Konzessionsabgabe
+ID_consumptionOverview,InvoiceDeclarationSkill,1,ID,Verbrauchsübersicht
+ID_consumptionPoint,InvoiceDeclarationSkill,1,ID,Verbrauchsstelle
+ID_contractAccount,InvoiceDeclarationSkill,1,ID,Vertragskonto
+ID_creditBalance,InvoiceDeclarationSkill,0,ID,Guthaben
+ID_demandRate,InvoiceDeclarationSkill,1,ID,Leistungspreis
+ID_ecoTax,InvoiceDeclarationSkill,1,ID,Ökosteuer
+ID_eegApportionment,InvoiceDeclarationSkill,1,ID,EEG-Umlage
+ID_electricityMix,InvoiceDeclarationSkill,1,ID,Stromkennzeichnung
+ID_electricityTax,InvoiceDeclarationSkill,1,ID,Stromsteuer
+ID_energyRate,InvoiceDeclarationSkill,1,ID,Arbeitspreis
+ID_findInvoiceAmount,InvoiceDeclarationSkill,0,ID,Rechnungsbetrag auf Rechnung
+ID_gasTax,InvoiceDeclarationSkill,1,ID,Erdgassteuer
+ID_generalInfo,InvoiceDeclarationSkill,1,ID,Übersicht zu Rechnungsfragen
+ID_gridOperator,InvoiceDeclarationSkill,0,ID,Netzbetreiber-ID
+ID_gridUtilisationCosts,InvoiceDeclarationSkill,1,ID,Netzentgelte
+ID_grossPriceAndNetPrice,InvoiceDeclarationSkill,1,ID,Brutto-/Nettobetrag
+ID_invoiceAmount,InvoiceDeclarationSkill,1,ID,Rechnungsbetrag
+ID_invoiceDueDate,InvoiceDeclarationSkill,0,ID,Fälligkeitstermin
+ID_kilowattHour,InvoiceDeclarationSkill,0,ID,Kilowattstunde
+ID_kwkgApportionment,InvoiceDeclarationSkill,1,ID,KWKG-Umlage
+ID_madePayment,InvoiceDeclarationSkill,0,ID,Geleistete Zahlungen
+ID_marketLocation,InvoiceDeclarationSkill,1,ID,Marktlokation
+ID_meteringLocation,InvoiceDeclarationSkill,1,ID,Messlokation
+ID_nevApportionment,InvoiceDeclarationSkill,1,ID,§19 StromNEV
+ID_offshoreApportionment,InvoiceDeclarationSkill,1,ID,Offshore-Netzumlage
+ID_priceComposition,InvoiceDeclarationSkill,1,ID,Zusammensetzung des Strom-/Gaspreises
+ID_taxesAndDuties,InvoiceDeclarationSkill,1,ID,Steuern und Abgaben
+ID_thermalGasBilling,InvoiceDeclarationSkill,1,ID,Thermische Gasabrechnung
+invoiceExpiration,InvoiceDeclarationSkill,1,ID,Verjährung von Rechnungen
+invoiceExplanation,InvoiceDeclarationSkill,1,ID,Rechnungserklärung
+kiloWatt,InvoiceDeclarationSkill,1,ID,Kilowattstunde/Kilowatt-peak
+primaryEnergyFactor,InvoiceDeclarationSkill,1,ID,Primärenergiefaktor
+thermalInsulationOrdinance,InvoiceDeclarationSkill,1,ID,Wärmeschutzverordnung
+vatReduction,InvoiceDeclarationSkill,1,ID,Mehrwertsteuersenkung
+checkPreviousMeterReading,MeterReadingSkill,1,MR,Zählerstandshistorie
+correctMeterReading,MeterReadingSkill,1,MR,Zählerstand korrigieren
+customerOwnedMeter,MeterReadingSkill,1,MR,Kundeneigener Zähler
+digitalMeterBenefits,MeterReadingSkill,1,MR,Vorteile digitaler Zähler
+explainMeterReading,MeterReadingSkill,0,MR,Erklärung zur Zählerstandserfassung
+infoWhenMeterInstallation,MeterReadingSkill,1,MR,Zählereinbau und -ausbau
+meterBlockage,MeterReadingSkill,1,MR,Zählersperrung
+meterCalibration,MeterReadingSkill,1,MR,Zählereichung
+meterCosts,MeterReadingSkill,1,MR,Zählerkosten
+meterDataDeletion,MeterReadingSkill,1,MR,Löschen historischer Zählerstände
+meterDataProcessing,MeterReadingSkill,1,MR,Verarbeitung von Zählerdaten
+meterInstallationNecessity,MeterReadingSkill,1,MR,Erforderlichkeit eines Zählereinbaus
+meterInstallationRequirements,MeterReadingSkill,1,MR,Installationsvoraussetzungen für einen Zähler
+meterPIN,MeterReadingSkill,1,MR,Zähler-PIN
+meterPowerPulse,MeterReadingSkill,1,MR,Zählerimpulse
+meterReadingForm,MeterReadingSkill,0,MR,Erfassung der Zählerstände (Formular)
+meterReadingMandate,MeterReadingSkill,1,MR,Vollmacht Zählerstandserfassung
+meterReadingOverview,MeterReadingSkill,1,MR,Übersicht zu Zähler und Zählerstand
+meterReadingProblem,MeterReadingSkill,1,MR,Probleme bei der Zählerstandserfassung
+meterSealing,MeterReadingSkill,1,MR,Plombierung von Zählern
+meterTypeInfo,MeterReadingSkill,1,MR,Zählertyp
+MR_belatedMeterReading,MeterReadingSkill,1,MR,Verspätete Zählerstandserfassung
+MR_billTime,MeterReadingSkill,0,MR,Erläuterung zum Termin der Jahresrechnung
+MR_brokenMeter,MeterReadingSkill,1,MR,Fehlerhafte Zähler(-stände)
+MR_confirmationMessage,MeterReadingSkill,1,MR,Bestätigung ZS-Erfassung
+MR_differenceConventionalSmartMeter,MeterReadingSkill,0,MR,Unterschied konventioneller/smarter Zähler
+MR_differenceHTNT,MeterReadingSkill,1,MR,Hochtarif und Niedertarif
+MR_implausibleMeterReading,MeterReadingSkill,1,MR,Unplausibler Zählerstand
+MR_meterLocation,MeterReadingSkill,1,MR,Ort des Zählers
+MR_meterNumberLocation,MeterReadingSkill,1,MR,Zählernummer finden
+MR_noReadingRequest,MeterReadingSkill,1,MR,Keine Ableseaufforderung erhalten
+MR_obis,MeterReadingSkill,0,MR,Erläuterung OBIS-Kennzahlen
+MR_OBISnumber,MeterReadingSkill,1,MR,OBIS-Kennzahlen Erläuterung
+MR_PvMeterDefinition,MeterReadingSkill,1,MR,Erläuterung PV ZW-Kennziffern
+MR_readingInstruction,MeterReadingSkill,1,MR,Anleitung Zählerstandsablesung
+MR_readingTime,MeterReadingSkill,1,MR,Turnus Zählerstandserfassung
+MR_tellMeterReading,MeterReadingSkill,1,MR,Erfassung der Zählerstände
+MR_wrongMeterNumber,MeterReadingSkill,1,MR,Zählernummer korrigieren
+smartMeterRollout,MeterReadingSkill,0,MR,Smart Meter Rollout
+smartMeterUpgrade,MeterReadingSkill,1,MR,Smart Meter Upgrade
+subMetering,MeterReadingSkill,0,MR,Submetering
+movingOverview,MovingSkill,1,MV,Übersicht zu Umzug
+movingStatus,MovingSkill,1,MV,Stand der Umzugsmeldung
+MV_absentInfoForMoving,MovingSkill,1,MV,Umzugsinformationen fehlen
+MV_afterMovingInfo,MovingSkill,1,MV,Nachträgliche Umzugsmeldung
+MV_cancelContractWhenMoving,MovingSkill,1,MV,Vertragskündigung bei Umzug
+MV_continueContractAfterMoving,MovingSkill,1,MV,Vertrag bei Umzug beibehalten
+MV_executeMoving,MovingSkill,1,MV,Umzug
+MV_generalMovingInfo,MovingSkill,1,MV,Umzugsmitteilung
+MV_noMoving,MovingSkill,1,MV,Kein Umzug
+MV_reportEmptyFlat,MovingSkill,1,MV,Leerstandsmeldung
+MV_timeTillMoving,MovingSkill,1,MV,Fristen für Umzugsmeldung
+MV_whyTellMoving,MovingSkill,1,MV,Warum man Umzug melden sollte
+newHouseOwner,MovingSkill,1,MV,Neuer Eigentümer/Mieter
+busStrike,PublicTransportSkill,1,PT,Busstreik
+lostAndFound,PublicTransportSkill,1,PT,Fundsachen
+publicTransportSubscriptions,PublicTransportSkill,1,PT,Abonnement
+publicTransportTickets,PublicTransportSkill,1,PT,Fahrkarten
+scheduleAndMap,PublicTransportSkill,1,PT,Fahrplanauskunft
+SM_collectiveTaxi,PublicTransportSkill,1,PT,Anrufsammeltaxi
+SM_parking,PublicTransportSkill,1,PT,Parken
+adjustDistrictHeatCapacity,SalesSkill,1,SA,Leistungsanpassung Fernwärme
+averageConsumption,SalesSkill,1,SA,Durchschnittlicher Energieverbrauch
+changeProduct,SalesSkill,1,SA,Produktwechsel
+contactExtension,SalesSkill,0,SA,löschen
+contractDuration,SalesSkill,1,SA,Vertragslaufzeit
+contractExtension,SalesSkill,1,SA,Vertragsverlängerung
+contractOverview,SalesSkill,1,SA,Übersicht zu Vertragsangelegenheiten
+employeeTariffs,SalesSkill,0,SA,Mitarbeitertarife
+energyBundle,SalesSkill,1,SA,Energiepaket
+energyStorage,SalesSkill,1,SA,Energiespeicher
+explainBenefitSolarProduct,SalesSkill,1,SA,Mehrwert von Solarprodukten
+functionalityCalculator,SalesSkill,0,SA,Funktion des Tarifrechners
+gridFeedInInfo,SalesSkill,0,SA,Informationen zur Einspeisung
+migrationCustomers,SalesSkill,0,SA,Fragen zu Systemumstellung (Kundenportal)
+noProductOffering,SalesSkill,1,SA,Produkt nicht verfügbar
+pelletFuel,SalesSkill,1,SA,Holzpellets
+pricesInfo,SalesSkill,1,SA,Preisauskunft
+pricesInfoFuture,SalesSkill,1,SA,Zukünftige Preisentwicklung
+pricesInfoHistoric,SalesSkill,1,SA,Historische Preisentwicklung
+reductionTariffs,SalesSkill,1,SA,Ermäßigungstarife
+rentalService,SalesSkill,1,SA,Verleihservice
+revocation,SalesSkill,1,SA,Widerruf
+SA_additionalContract,SalesSkill,0,SA,Frage nach zusätzlichem Energievertrag
+SA_bonusProgram,SalesSkill,1,SA,Bonus
+SA_businessCustomers,SalesSkill,1,SA,Informationen für Geschäftskunden
+SA_calculatorRedirect,SalesSkill,1,SA,Tarifberechnung (Vertrieb)
+SA_changeSupplier,SalesSkill,1,SA,Anbieterwechsel
+SA_climateNeutralGas,SalesSkill,1,SA,Klimaneutrales Gas
+SA_contractConfirmation,SalesSkill,1,SA,Vertragsbestätigung/-status
+SA_contractTerms,SalesSkill,1,SA,Vertragskonditionen
+SA_cooling,SalesSkill,0,SA,Kühlgeräte
+SA_deadlinePeriodEnd,SalesSkill,1,SA,Kündigungsfrist
+SA_deliveryArea,SalesSkill,1,SA,Versorgungsgebiet
+SA_directMarketing,SalesSkill,1,SA,Direktvermarktung
+SA_districtHeat,SalesSkill,1,SA,(Fern-)Wärme
+SA_energyConsumptionUnknown,SalesSkill,0,SA,Stromverbrauch unbekannt
+SA_fundingConsulting,SalesSkill,1,SA,Fördermittelberatung
+SA_gasConsumptionUnknown,SalesSkill,0,SA,Gasverbrauch unbekannt
+SA_heating,SalesSkill,0,SA,Angebote/Contracting Fern- und/oder Nahwärme
+SA_industrialCustomers,SalesSkill,1,SA,Strom & Gas für Industrie-/ Individualkunden
+SA_priceGuarantee,SalesSkill,1,SA,Preisgarantie
+SA_publicSectorCustomers,SalesSkill,1,SA,Energie für Kommunen und Einrichtungen
+SA_safetyServices,SalesSkill,0,SA,Sicherheitsdienstleistungen
+SA_serviceOverview,SalesSkill,1,SA,Übersicht Dienstleistungen
+SA_transferContract,SalesSkill,1,SA,Vertrag übertragen
+salesOverview,SalesSkill,1,SA,Übersicht zu Vertriebsthemen
+SM_askGridOperator,SalesSkill,0,SA,Verweis an Netzbetreiber
+SM_contractTermination,SalesSkill,1,SA,Vertragskündigung
+SM_ecologicalProducts,SalesSkill,1,SA,Ökoenergieprodukte
+SM_heatContracting,SalesSkill,1,SA,Heizungsleistungen und Wärmevereinbarung
+SM_heatPump,SalesSkill,1,SA,Wärmepumpe
+SM_kombiBonus,SalesSkill,0,SA,Kombi-Bonus
+SM_loyaltyCard,SalesSkill,1,SA,Kundenkarte
+SM_photovoltaicRegister,SalesSkill,1,SA,PV-Anlage anmelden
+SM_powerConsumedOnSite,SalesSkill,1,SA,Baustrom
+SM_prizeCompetition,SalesSkill,1,SA,Gewinnspiel
+SM_renovation,SalesSkill,1,SA,Sanierungsfahrplan
+SM_shirtPromotion,SalesSkill,0,SA,Trikot-Aktion
+SM_solarProducts,SalesSkill,1,SA,Solarprodukte
+SM_standPipe,SalesSkill,1,SA,Standrohr
+SM_tariffsAndPricesInfo,SalesSkill,1,SA,Tarife und Produkte
+SM_tariffsAndPricesSales,SalesSkill,0,SA,Tarife und Preise
+specialTariffEmobility,SalesSkill,1,SA,Sondertarife für E-Mobility Kunden
+startOfSupply,SalesSkill,1,SA,Lieferbeginn
+terminationRevocation,SalesSkill,0,SA,Widerruf der Kündigung
+terminationStatus,SalesSkill,1,SA,Kündigungsstatus
+whyUs,SalesSkill,0,SA,Überblick der Vorteile
+addressDietzenbach,SmalltalkSkill,0,SM,addressDietzenbach
+addressRodgau-Jügesheim,SmalltalkSkill,0,SM,addressRodgau-Jügesheim
+addressSeligenstadt,SmalltalkSkill,0,SM,addressSeligenstadt
+cancel,SmalltalkSkill,0,SM,Abbruch
+factsAndFigures,SmalltalkSkill,1,SM,Daten und Fakten über das EVU/Stadtwerk
+handover,SmalltalkSkill,1,SM,Handover
+help,SmalltalkSkill,1,SM,Hilfe
+how_can_i_help_you_now,SmalltalkSkill,1,SM,Wie kann ich weiterhelfen?
+makeOrManageAppointment,SmalltalkSkill,1,SM,Terminverwaltung
+None,SmalltalkSkill,1,SM,unklare Eingabe
+SM_aboutUs,SmalltalkSkill,1,SM,Vorstellung Stadtwerke/EVU
+SM_address,SmalltalkSkill,1,SM,Adresse Kundenzentrum
+SM_blog,SmalltalkSkill,0,SM,Blog
+SM_bot,SmalltalkSkill,1,SM,Nachfragen zum Bot
+SM_complaint,SmalltalkSkill,1,SM,Allgemeine Beschwerde
+SM_contact,SmalltalkSkill,1,SM,Kontaktdaten anzeigen
+SM_contactRequest,SmalltalkSkill,1,SM,Kontaktanfrage stellen
+SM_coronaCustomerService,SmalltalkSkill,0,SM,Kundenservice während Corona
+SM_coronaInfo,SmalltalkSkill,0,SM,Corona-Informationen
+SM_coronaMoratorium,SmalltalkSkill,0,SM,Corona Zahlungsmoratorium
+SM_coronaTax,SmalltalkSkill,0,SM,Änderung Mehrwertsteuer Corona
+SM_currentDate,SmalltalkSkill,1,SM,Informationen zum aktuellen Datum
+SM_customerMagazine,SmalltalkSkill,0,SM,Kundenmagazin
+SM_empathyEmotion,SmalltalkSkill,1,SM,Antwort auf positive Emotionen
+SM_englishRequest,SmalltalkSkill,1,SM,Anfragen auf Englisch
+SM_favouriteColour,SmalltalkSkill,1,SM,Lieblingsfarbe
+SM_fotobox,SmalltalkSkill,0,SM,Fotobox
+SM_goodbye,SmalltalkSkill,1,SM,Verabschiedung
+SM_greeting,SmalltalkSkill,1,SM,Begrüßung
+SM_howAreYou,SmalltalkSkill,1,SM,Wie geht es?
+SM_jobCenterCostAbsorption,SmalltalkSkill,1,SM,Kostenübernahme Energiekosten durch Jobcenter
+SM_joke,SmalltalkSkill,1,SM,Witz
+SM_negativeEmotion,SmalltalkSkill,1,SM,Antwort auf negative Emotionen
+SM_noAnswerIntended,SmalltalkSkill,0,SM,Keine Auskunft zu Thema
+SM_thanks,SmalltalkSkill,1,SM,Danke
+SM_weather,SmalltalkSkill,1,SM,Wetter
+socialMedia,SmalltalkSkill,1,SM,Social Media
+welcome,SmalltalkSkill,1,SM,Willkommen
+accessibility,SwimmingPoolSkill,1,SW,Barrierefreiheit im Schwimmbad
+bookingService,SwimmingPoolSkill,0,SW,Wasserflächenbuchung
+changingTable,SwimmingPoolSkill,1,SW,Wickelmöglichkeiten im Schwimmbad
+checkPoolCapacity,SwimmingPoolSkill,1,SW,Schwimmbadauslastung
+openingHours,SwimmingPoolSkill,1,SW,Öffnungszeiten Schwimmbad
+poolEquipment,SwimmingPoolSkill,1,SW,Schwimmbad-Ausstattung
+poolGastronomy,SwimmingPoolSkill,1,SW,Schwimmbadgastronomie
+poolOverview,SwimmingPoolSkill,1,SW,Übersicht zu Schwimmbadthemen
+poolTickets,SwimmingPoolSkill,1,SW,Eintrittskarten Schwimmbad
+sauna,SwimmingPoolSkill,1,SW,Sauna
+swimmingLessons,SwimmingPoolSkill,1,SW,Kursangebot Schwimmbad
+swimShop,SwimmingPoolSkill,1,SW,Schwimmbad-Shop
+waterTemperature,SwimmingPoolSkill,1,SW,Wassertemperatur
+bitRate,TelCoSkill,1,TC,Datenübertragungsrate
+broadbandTypes,TelCoSkill,1,TC,Breitbandanschlüsse
+contactDataPorting,TelCoSkill,1,TC,Rufnummernmitnahme
+findFibreId,TelCoSkill,1,TC,Glasfaser-ID
+internetAvailability,TelCoSkill,1,TC,Internetverfügbarkeit
+internetConnectionIssues,TelCoSkill,1,TC,Internetstörung
+internetPerformanceIssues,TelCoSkill,1,TC,Geschwindkeitsprobleme
+internetThrotteling,TelCoSkill,1,TC,Internetdrosselung
+registerForFibre,TelCoSkill,1,TC,Glasfaserantrag
+SM_internet,TelCoSkill,1,TC,Tarife und Produkte TelKo
+telcoConsulting,TelCoSkill,1,TC,Beratung TelKo
+telcoDeviceDelivery,TelCoSkill,1,TC,Geräteversand TelKo
+telcoDeviceSetup,TelCoSkill,1,TC,Geräteinstallation TelKo allgemein
+telcoInstallerAppointment,TelCoSkill,1,TC,Technikertermin TelKo
+telcoOverview,TelCoSkill,1,TC,Übersicht zu TelKo
+telcoOwnDevices,TelCoSkill,1,TC,Kundeneigene Geräte TelKo
+feedback,TestSkill,0,TEST,feedback
