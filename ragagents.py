@@ -24,7 +24,7 @@ LANGCHAIN_PROJECT = os.getenv("LANGCHAIN_PROJECT")
 
 gpt = AzureChatOpenAI(
     azure_deployment="gpt-35-turbo-1106",
-    openai_api_key="7c3f9550b69c419aa0f1830e338ff562",
+    openai_api_key="api key",
     openai_api_type="azure",
     openai_api_version="2023-12-01-preview",
     azure_endpoint="https://chatbotopenaikeyswe.openai.azure.com/",
@@ -35,7 +35,7 @@ gpt = AzureChatOpenAI(
 
 embed = AzureOpenAIEmbeddings(
     azure_deployment="text-embedding-ada-002",
-    openai_api_key="7c3f9550b69c419aa0f1830e338ff562",
+    openai_api_key="api key",
     azure_endpoint="https://chatbotopenaikeyswe.openai.azure.com/"
 )
 
