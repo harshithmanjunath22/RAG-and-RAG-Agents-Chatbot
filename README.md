@@ -1,4 +1,4 @@
-# RAG CHATBOT
+# RAG and RAG Agent based CHATBOTS
 
 #How to Use
 
@@ -13,3 +13,5 @@
 3: To launch the Agent Application: Run the app by following the command:
 
         streamlit run agentstreamlit.py
+
+4: To run RAG based chatbot follow the same steps as above but run rag file.
